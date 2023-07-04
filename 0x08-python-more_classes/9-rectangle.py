@@ -78,7 +78,7 @@ class Rectangle:
         return (cls(size, size))
 
     def __str__(self):
-        """Return the rectangle printable representation of the Rectangle.
+        """Return the rectangle printable representation.
 
         Represents the rectangle with the # character.
         """
@@ -93,12 +93,12 @@ class Rectangle:
         return ("".join(rect))
 
     def __repr__(self):
-        """Return the rectangle string representation of the Rectangle."""
+        """Return the rectangle string representation."""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
 
     def __del__(self):
-        """Print a message for every rectangle deletion of a Rectangle."""
+        """Print a message for every rectangle deletion."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
