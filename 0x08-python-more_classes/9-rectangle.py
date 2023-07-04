@@ -18,7 +18,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """To get/set the rectangle width of the Rectangle."""
+        """To get/set the rectangle width."""
         return self.__width
 
     @width.setter
@@ -31,7 +31,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """To get/set the rectangle height of the Rectangle."""
+        """To get/set the rectangle height."""
         return self.__height
 
     @height.setter
@@ -43,22 +43,20 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Return the rectangle area of the Rectangle."""
+        """Return the rectangle area."""
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """Return the rectangle perimeter of the Rectangle."""
+        """Return the rectangle perimeter."""
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Return the Rectangle with the greater area.
-
-        Args:
-            rect_1 (Rectangle): The first Rectangle.
-            rect_2 (Rectangle): The second Rectangle.
+        """Return the Rectangle with the greater area. with
+        rect_1 as first rectangle and rect_2 as second
+        rectangle.
         Raises:
             TypeError: If either of rect_1 or rect_2 is not a Rectangle.
         """
