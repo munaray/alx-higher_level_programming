@@ -7,4 +7,4 @@ class Square extends Rectangle {
 	}
 }
 
-export default Square;
+module.exports = Rectangle;

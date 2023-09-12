@@ -1,10 +1,10 @@
 #!/usr/bin/node
-const dictionary = require("./101-data").dictionary;
+const dict = require("./101-data").dict;
 
-const listSum = Object.entries(dictionary);
-const value = Object.values(dictionary);
+const listSum = Object.entries(dict);
+const value = Object.values(dict);
 const uniqueValue = [...new Set(value)];
-const newDictionary = {};
+const newDict = {};
 for (const j in uniqueValue) {
 	const list = [];
 	for (const k in listSum) {
@@ -12,6 +12,6 @@ for (const j in uniqueValue) {
 			list.unshift(listSum[k][0]);
 		}
 	}
-	newDictionary[uniqueValue[j]] = list;
+	newDict[uniqueValue[j]] = list;
 }
-console.log(newDictionary);
+console.log(newDict);
