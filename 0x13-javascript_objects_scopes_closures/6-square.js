@@ -1,5 +1,5 @@
 #!/usr/bin/node
-import SquareClass from "./5-square.js";
+const SquareClass = require("./5-square");
 
 class Square extends SquareClass {
 	charPrint(c) {
